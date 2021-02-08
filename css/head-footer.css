@@ -1,0 +1,154 @@
+html{
+    height: 100%;
+    color: #faebd7;
+    
+}
+html a{
+    text-decoration: none;
+    color: #faebd7;
+}
+html p{
+    margin: 0px;
+}
+body{
+    font-family:Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    /*background-color: rgb(89, 236, 241);*/
+    
+}
+#intro p{
+    padding: 5px;
+}
+header{
+    background-color: rgb(51, 43, 43);
+}
+footer{
+    background-color: rgb(51, 43, 43);
+}
+footer p{
+    margin-left: 5px;
+}
+
+@media (max-device-width:375px){/*Телефон*/
+    header{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        
+        
+    }
+    #TITLE{
+        font-size: 40px;
+        width: 100%;
+        flex-wrap: wrap;
+        text-align: center;
+        line-height:32px;
+    }
+    div#intro{
+        width: 100%;
+        
+        /*background-color: rgb(42, 77, 77);*/
+        
+        margin: auto;
+        text-align: center;
+    }
+    footer{
+        margin: auto;
+        margin-top: 20px;
+        
+        width: 100%;
+        
+    }
+}
+@media screen and (min-width:768px){/*Монитор*/
+    header{
+        width: 1248px;
+        display: block;
+        margin: auto;
+        
+        
+    }
+    #TITLE{
+        white-space: pre;
+        font-size: 40px;
+        
+        display: flex;
+        flex-wrap: nowrap;
+        padding-left: 24px;
+    }
+    #TITLE p{
+        float: left;
+        
+    }
+    div#intro{
+        width: 1200px;
+        height: 100px;
+        /*background-color: aqua;*/
+        margin: auto;
+    }
+    footer{
+       /* position: relative;
+       top: 100%;*/ 
+       margin: auto;
+        
+        margin-top: 20px;
+        left: 0px;
+        margin-bottom: -76px;
+        width: 1248px;
+        
+    }
+    
+    footer p:hover{
+        color: rgb(187, 24, 24);
+    }
+    footer a:hover{
+        color: rgb(187, 24, 24);
+    }
+   
+}
+
+
+/*div#present{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 1248px;
+    height: 200px;
+    background-color: chocolate;
+    
+}*/
+@media (min-device-width:375px) and (max-device-width:768px){/*iPad*/
+    header{
+        width: 100%;
+        
+        margin: auto;
+        
+        
+    }
+    #TITLE{
+        
+        font-size: 40px;
+        
+        
+    }
+    div#intro{
+        width: 100%;
+        height: auto;
+        
+        
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+    }
+    footer{
+        margin: auto;
+        margin-top: 20px;
+        
+        width: 100%;
+        
+    }
+}
+
+

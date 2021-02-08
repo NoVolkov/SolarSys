@@ -1,0 +1,273 @@
+div#menu{
+   margin-top: 20px;
+   
+}
+/*#mainmenu{
+    list-style: none;/*обнуление маркеров у списка
+    display: block;
+    padding-inline-start: 0px;
+    width:  1248px;
+    margin: auto;
+    text-align: center;
+    
+    border-top-width:3px;
+}
+*/
+ul#mainmenu:after{
+    display: block;
+    float: none;
+    content: " ";
+    clear: both;
+}
+ul#mainmenu > li {
+    /* Задаю выравнивание и позиционирование. */
+    float: left;
+    /* Считаем координаты относительно исходного места*/
+    position: relative;
+    width: 208px;
+}
+ul#mainmenu > li > a {
+    /* Делаю элементы блочными: */
+    display: block;
+    /* Задаю белый цвет. */
+    
+    /* Задаю отступ 10px. */
+    padding: 10px;
+    /* Убираю форматирование*/
+    
+    /* Задаю цвет. */
+    background-color: #da570f;
+}
+ul#mainmenu > li > a:hover {
+    /* Задаю цвет при наведении. */
+    background-color: #eb9316;
+    
+}
+ul#secmenu {
+    position: absolute;
+    width: 208px;
+    top: 39px;
+    /* Делаю субменю скрытыми. */
+    display: none;
+    /* Цвет — белый. */
+    
+}
+ul#secmenu > li {
+    /* Блочное расположение элементов*/
+    display: block;
+    
+}
+ul#secmenu > li > a {
+    /* Делаю элементы блочными. */
+    display: block;
+    /* Убираю форматирование*/
+    text-decoration: none;
+    /* Задаю отступ. */
+    padding: 10px;
+    /* Задаю цвет. */
+   
+    /* Еще цвет. 
+    background-color: #da570f;*/
+}
+ul#secmenu > li > a:hover {
+    /* Цвет бэкграунда при наведении. 
+    background-color: #eb9316;*/
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    /* Задаю подчеркивание
+    text-decoration: underline;*/
+}
+ul#mainmenu > li:hover > ul#secmenu {
+    /* Делаю элементы блочными. */
+    display: block;
+    padding-inline-start: 0px;
+}
+li span{
+    font-size: 14px;
+}
+#M1{
+    background-color: #ed143d;
+}
+#V1{
+    background-color: #b8860b;
+}
+#E1{
+    background-color: #00f;
+    
+}
+#M2{
+    background-color: #f00;
+}
+#J1{
+    background-color: #a0522d;
+}
+#S1{
+    background-color: #ff8c00;
+}
+#U1{
+    background-color: #00bfff;
+}
+#N1{
+    background-color: #1e90ff;
+}
+#SN1{
+    background-color: #ffeb3b;
+    z-index: 1;
+}
+#SN2{
+    background-color: #ffc107;
+    z-index: 2;
+}
+#SN3{
+    background-color: #ff9800 ;
+    z-index: 3;
+}
+#SN4{
+    background-color: #ff2222;
+    z-index: 4;
+}
+#MAB{
+    background-color: #9e7b7b;
+}
+#HIL{
+    background-color: #ca7a11;
+}
+#GRE{
+    background-color: #129412;
+}
+#KUB{
+    background-color: #800b5d;
+}
+#CM{
+    background-color: #c4afbe;
+}
+#ST{
+    background-color: #272fa7;
+}
+#IN{
+    background-color: #2b99d8;
+}
+#T4{
+    background-color: #6136a7;
+}
+.l5>li{
+    background-color: violet;
+}
+.l6>li{
+    background-color: teal;
+}
+@media screen and (min-width:768px){/*Монитор*/
+    #mainmenu{
+        list-style: none;/*обнуление маркеров у списка*/
+        display: block;
+        padding-inline-start: 0px;
+        width:  1248px;
+        margin: auto;
+        text-align: center;
+        
+        border-top-width:3px;
+    }
+}
+@media (max-device-width:375px){/*Телефон*/
+    #mainmenu{
+        list-style: none;/*обнуление маркеров у списка*/
+        display: flex;
+        padding-inline-start: 0px;
+        flex-direction: column;
+        width:  100%;
+        margin: auto;
+        text-align: center;
+        z-index: 0;
+        border-top-width:3px;
+    }
+    ul#mainmenu > li {
+    width: 50%;
+    
+    }
+    
+    ul#secmenu {
+        
+        
+        position: absolute;
+        left: 100%;
+        width: 100%;
+        
+        
+        /* Делаю субменю скрытыми. */
+        display: none;
+        /* Цвет — белый. */
+        
+    }
+    ul#secmenu.l1{
+        top: 0px;
+    }
+    ul#secmenu.l2{
+        top: -39px;
+    }
+    ul#secmenu.l3{
+        top: -78px;
+    }
+    ul#secmenu.l4{
+        top: -117px;
+    }
+    ul#secmenu.l5{
+        top: -156px;
+    }
+    ul#secmenu.l6{
+        top: -195px;
+    }
+    
+}
+@media (min-device-width:375px) and (max-device-width:768px){/*iPad*/
+    #mainmenu{
+        list-style: none;/*обнуление маркеров у списка*/
+        display: flex;
+        padding-inline-start: 0px;
+        flex-direction: row;
+        
+        
+        width:  100%;
+        margin: auto;
+        text-align: center;
+        z-index: 0;
+        border-top-width:3px;
+    }
+    ul#mainmenu > li {
+    
+    display: flex;
+    align-items: stretch;
+    
+    }
+    
+    ul#secmenu {
+        
+        
+        position: absolute;
+        
+        width: 100%;
+        
+        top: 100%;
+        /* Делаю субменю скрытыми. */
+        display: none;
+        /* Цвет — белый. */
+        
+    }
+    ul#secmenu>li>a{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    ul#mainmenu > li > a {
+        /* Делаю элементы блочными: */
+        display: block;
+        /* Задаю белый цвет. */
+        color: #fff;
+        /* Задаю отступ 10px. */
+        padding: 0px;
+        /* Убираю форматирование*/
+        
+        /* Задаю цвет. */
+        background-color: #da570f;
+        width: 100%;
+    }
+    
+}

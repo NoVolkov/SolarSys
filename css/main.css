@@ -1,0 +1,82 @@
+@media screen and (min-width:768px){/*Монитор*/
+    main{
+        /*background-color: cornsilk; */
+        margin: auto;
+        
+        margin-top: 20px;
+        width: 1248px;
+    }
+    .mt{
+        margin-bottom: 20px;
+    }
+    .text{
+        width: 416px;
+        height: 150px;
+        background-color: crimson;
+        float: left;
+    }
+    .text p{
+        padding: 5px;
+    }
+    .img{
+        width: 832px;
+        height: 150px;
+        margin-left: 416px;
+        background-color: greenyellow;
+    }
+    
+}
+
+@media (max-device-width:375px){/*Телефон*/
+    main{
+        /*background-color: cornsilk; */
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .mt{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .img{
+        
+        width: 100%;
+        height: 50px;
+        background-color: greenyellow;
+    }
+    .text{
+        padding: 5px;
+        height: 100%;
+        background-color: crimson;
+        
+    }
+}
+@media (min-device-width:375px) and (max-device-width:768px){/*iPad*/
+    main{
+        /*background-color: cornsilk; */
+        margin: auto;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .mt a{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    .text{
+        width: 55%;
+        height: 100%;
+        background-color: crimson;
+        
+    }
+    .text p{
+        padding: 2px;
+    }
+    .img{
+        width: 45%;
+        
+        margin-left: 0px;
+        background-color: greenyellow;
+    }
+}

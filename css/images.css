@@ -1,0 +1,205 @@
+body{
+    background: url(../img/STARS.jpg);
+    background-size:cover;
+}
+
+.mt.sun div.img{
+    background: url(../img/SUN_M.jpg) no-repeat;
+    background-position: center -35px;
+    background-size: cover; 
+}
+.mt.planets div.img{
+    background: url(../img/PLANETS.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.mt.asteroids div.img{
+    background: url(../img/ASTEROIDS_M.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+}
+.mt.comets div.img{
+    background: url(../img/СOMETS_M.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: scale(-1, -1);
+}
+.mt.ItG div.img{
+    background: url(../img/MW.jpg) no-repeat;
+    background-position:0px center;
+    background-size: cover;
+}
+
+.par div.sp1{
+    background: url(../img/SUN_P1.jpg) no-repeat;
+    background-position:center;
+       background-size: cover;  
+}
+.par div.sp2{
+    background: url(../img/SUN_STR.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.sp3{
+    background: url(../img/SUN_GR.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.sp4{
+    background: url(../img/SUN_PER.webp) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP1{
+    background: url(../img/MERCURY_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP2{
+    background: url(../img/VENUS_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP3{
+    background: url(../img/EARTH_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP4{
+    background: url(../img/MARS_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP5{
+    background: url(../img/JUPITER_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP6{
+    background: url(../img/SATURN_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP7{
+    background: url(../img/URANUS_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.LP8{
+    background: url(../img/NEPTUNE_M.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.MP2{
+    background: url(../img/MERC_G.png) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.MP3{
+    background: url(../img/MERC_R.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.MP4{
+    background: url(../img/MERC_S.png) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.VP2{
+    background: url(../img/VEN_A.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.VP3{
+    background: url(../img/VEN_C.webp) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.VP4{
+    background: url(../img/VEN_G.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.par div.MRP2{
+    background: url(../img/MARS_D.jpg) no-repeat;
+    background-position:center;
+    background-size: contain;  
+}
+.par div.MRP3{
+    background: url(../img/MARS_F.jpg) no-repeat;
+    background-position:center;
+    background-size: cover;  
+}
+.sun .mainIMG{
+    background: url(../img/SUN_M.jpg) no-repeat;
+    background-position: 0 -50px;
+    background-size: cover; 
+}
+.mercury .mainIMG{
+    background: url(../img/MERCURY_M.png) no-repeat;
+    background-position: 0 -50px;
+    background-size: cover; 
+}
+.venus .mainIMG{
+    background: url(../img/VENUS_M.png) no-repeat;
+    background-position: 0 -100px;
+    background-size: cover; 
+}
+.earth .mainIMG{
+    background: url(../img/EARTH_M.png) no-repeat;
+    background-position: top;
+    background-size: cover; 
+}
+
+.mars .mainIMG{
+    background: url(../img/MARS_M.png) no-repeat;
+    background-position: 0 -190px;
+    background-size: cover; 
+}
+.jupiter .mainIMG{
+    background: url(../img/JUPITER_M.png) no-repeat;
+    background-position: 0 -190px;
+    background-size: cover;
+   
+}
+.saturn .mainIMG{
+    background: url(../img/SATURN_M.png) no-repeat;
+    background-position: 0 -120px;
+    background-size: cover; 
+}
+.uranus .mainIMG{
+    background: url(../img/URANUS_M.png) no-repeat;
+    background-position: top;
+    background-size: cover; 
+}
+.neptune .mainIMG{
+    background: url(../img/NEPTUNE_M.png) no-repeat;
+    background-position: 0 -10px;
+    background-size: cover; 
+}
+.par div.LOC4{
+    background: url(../img/LOC_CENTRE.jpg) no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+@media (max-device-width:375px){/*Телефон*/
+    .sun .mainIMG{
+        
+        background-position: 0 -10px;
+        
+    }
+    .par div.sp4{
+        
+        background-size: cover;  
+    }
+}
+@media (min-device-width:375px) and (max-device-width:768px){/*iPad*/
+    .mt.sun div.img{
+        
+        background-position: center;
+        
+    }
+
+}

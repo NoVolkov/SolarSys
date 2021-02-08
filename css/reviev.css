@@ -1,0 +1,209 @@
+main{
+    
+    margin: auto;
+    margin-top: 20px;
+    width: 1248px;
+    
+}
+
+.default{
+    background-color: grey;
+    height: 186px;
+    width: 100%;
+    padding-top: 10px;
+}
+form{
+    
+    margin-left: 10px;
+}
+.default textarea{
+    float: left;
+    padding-left: 5px;
+}
+.IN{
+    height: 78px;
+    width: 110px;
+    margin-left:10px;
+    
+}
+.RES{
+    height: 78px;
+    width: 110px;
+    margin-left: 10px;
+    
+}
+.stars {
+	overflow: hidden;
+	width:145px;
+    margin: 0;
+}
+.default p{
+    float: left;
+    font-size: 26px;
+    margin: 0px;
+}
+.stars:not(:checked) > input {/*not=НЕ() checked=переключение в режим для checkbox и radio*/
+	display: none;
+}
+.stars:not(:checked) > label {
+	float: right;
+	width: 29px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 35px;
+	line-height: 29px;/*межстрочный интервал*/
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;/*тень*/
+}
+.stars:not(:checked) > label:before {
+	content: '★';
+}
+.stars > input:checked ~ label {/*~ =стили ко всем элементам label после input*/
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.stars:not(:checked) > label:hover,
+.stars:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.stars > input:checked + label:hover,/*+ = соседние элементы, условие для звёзд*/
+.stars > input:checked + label:hover ~ label,
+.stars > input:checked ~ label:hover,
+.stars > input:checked ~ label:hover ~ label,
+.stars > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}
+
+.SR{
+    background-color: rgb(51, 43, 43);
+    margin: auto;
+    margin-top: 20px;
+    height: 100%;
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right: 10px;
+
+}
+.TR{
+    background-color: white;
+    color: black;
+
+    padding: 5px;
+
+}
+.STR:before{
+    float: left;
+    content: '★';
+    width: 29px;
+    font-size: 35px;
+    line-height: 29px;
+    color:lightgrey;
+}
+.STRG:before{
+    float: left;
+    content: '★';
+    width: 29px;
+    font-size: 35px;
+    line-height: 29px;
+    color:gold;
+}
+.TIME-R{
+    color: white;
+    
+}
+@media (min-device-width:375px) and (max-device-width:768px){/*iPad*/
+    main{
+        width: 100%;
+    }
+    #but{
+        display: flex;
+        flex-direction: column;
+    }
+    .IN{
+        height: 78px;
+        width: 110px;
+        
+        
+    }
+    .RES{
+        height: 78px;
+        width: 110px;
+        
+        
+    }
+    .stars {
+        overflow: hidden;
+        width:145px;
+        margin: 0;
+    }
+    .default p{
+        float: left;
+        font-size: 26px;
+        margin: 0px;
+    }
+}
+@media (max-device-width:375px){/*Телефон*/
+    main{
+        width: 100%;
+    }
+    .default{
+        background-color: grey;
+        height: 100%;
+        width: 100%;
+        padding-top: 10px;
+    }
+    form{
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    #T1{
+        padding-right: 10px;
+    }
+    .default textarea{
+        margin: 0px;
+        float: none;
+        padding-left: 5px;
+        width: 100%;
+        
+    }
+    #but{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .IN{
+        height: 78px;
+        width: 50%;
+        margin-left: 0px;
+        
+    }
+    .RES{
+        height: 78px;
+        width: 50%;
+        margin-left: 0px;
+        
+    }
+    #val{
+        display: flex;
+        flex-direction: row;
+    }
+    .stars {
+        overflow: hidden;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        width:145px;
+        margin: 0;
+    }
+    .default p{
+        float: left;
+       
+        font-size: 26px;
+        margin: 0px;
+    }
+}

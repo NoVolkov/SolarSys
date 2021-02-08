@@ -1,0 +1,117 @@
+main{
+    /*background-color: indianred;*/
+    margin:auto;
+    margin-top: 20px;
+    width: 1248px;
+}
+main p{
+    margin:0px;
+}
+.mainIMG{
+    background-color: indigo;/*убрать*/
+    height: 150px;
+}
+.par{
+    margin-top: 20px;
+    height: 200px;
+    background-color: rgb(51, 43, 43);
+}
+.IMG{
+    
+    background-color: khaki;/*убрать*/
+    width: 416px;
+    min-height: 100%;
+    
+}
+img{
+    width: 100%;
+    text-align: center;
+}
+.tx{
+    width: 832px;
+    height: 100%;
+    
+    padding-top: 5px;
+    padding-bottom: 5px;
+   /* font-size: 20px;*/
+}
+.tx p{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.tx.even{
+    float: left;
+}
+.IMG.even{
+    float: right;
+}
+.tx.uneven{
+    float: right;
+}
+.IMG.uneven{
+    float: left;
+}
+
+@media (max-device-width:375px){/*Телефон*/
+    main{
+        width: 100%;
+    }
+    .mainIMG{
+        background-color: indigo;/*убрать*/
+        height: 100px;
+        width: 100%;
+    }
+    .par{
+        margin-top: 20px;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .IMG{
+    
+        background-color: khaki;/*убрать*/
+        width: 100%;
+        height: 100px;
+        
+    }
+    .tx{
+        width: 100%;
+        height: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+       /* font-size: 20px;*/
+    }
+}
+@media (min-device-width:375px) and (max-device-width:768px){/*iPad*/
+    main{
+        width: 100%;
+    }
+    .mainIMG{
+        background-color: indigo;/*убрать*/
+        height: 150px;
+        width: 100%;
+    }
+    .par{
+        margin-top: 20px;
+        height: 100%;
+        
+        display: flex;
+        flex-direction: row;
+    }
+    .IMG{
+    
+        background-color: khaki;/*убрать*/
+        width: 45%;
+        
+        
+    }
+    .tx{
+        width: 55%;
+        height: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+       /* font-size: 20px;*/
+    }
+}
